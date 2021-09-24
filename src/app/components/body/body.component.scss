@@ -1,0 +1,32 @@
+$shadow:rgba(0,0,0,.5);
+$font-family:Miriam Libre, sans-serif;
+$color:rgb(170, 168, 38);
+
+.body-container{
+    font-family: $font-family;
+    position: absolute;
+    top:7rem;
+    display:grid;
+    width: 95%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow-x: hidden;
+    .identity{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        margin: auto;
+        grid-gap:20px;
+        img{
+            width:150px;
+            height:150px;
+            box-shadow: 3px 3px 5px $shadow;
+            border-radius: 30px;
+        }
+        p{
+            color:$color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

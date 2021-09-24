@@ -1,0 +1,24 @@
+$color:rgb(170, 168, 38);
+$font-family:Miriam Libre, sans-serif;
+header{
+    position: fixed;
+    z-index: 2 ;
+    top:0; left:0;
+    display: grid;
+    width: 100%;
+    font-family: $font-family;
+    grid-template-columns: 50% 50%;
+    h3{
+        color:$color;
+        display: flex;
+        align-items: center;
+        text-indent: 50px;
+        pointer-events: none;
+        
+        div{
+            font-size: 3rem;
+            text-shadow: 1px 0px 1px white,
+                         8px 0px 1px white;
+        }
+    }
+}
