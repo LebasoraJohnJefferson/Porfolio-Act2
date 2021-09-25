@@ -1,18 +1,21 @@
-<div class='aside-container'>
+<div class='nav' (click)='toggleClassName()' *ngIf='isShow'>
+    <i [ngClass]="isToggle==true ?  'fas fa-bars' : 'fas fa-times' "></i>
+</div>
+<div class='aside-container' *ngIf='!isToggle'>
     <ol>
         <li>
             <a href='https://facebook.com/lebs.jj' target="_blank">
-                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-facebook-square"></i><p *ngIf='isShow'>Facebook</p>
             </a>
         </li>
         <li>
             <a href='https://github.com/LebasoraJohnJefferson' target="_blank">
-                <i class="fab fa-github-square"></i>
+                <i class="fab fa-github-square"></i><p *ngIf='isShow'>Github</p>
             </a>
         </li>
         <li>
             <a href='https://www.youtube.com/channel/UCTpTNhXUSei9RjlYTrDqF1w' target="_blank">
-                <i class="fab fa-youtube-square"></i>
+                <i class="fab fa-youtube-square"></i><p *ngIf='isShow'>Youtube</p>
             </a>
         </li>
     </ol>

@@ -120,3 +120,20 @@ $color:rgb(19, 123, 141);
         }
     }
 }
+
+@media only screen and (max-width:786px){
+    .body-container{
+        .identity{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            img{
+                margin:auto;
+                width:80%;
+                height: 80%;
+            }
+            .introduction{
+                margin: auto;
+            }
+        }
+    }
+}
