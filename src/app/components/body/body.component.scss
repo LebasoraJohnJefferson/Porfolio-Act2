@@ -124,6 +124,8 @@ $color:rgb(19, 123, 141);
 @media only screen and (max-width:786px){
     .body-container{
         .identity{
+            width:98%;
+            margin:auto;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
             img{
