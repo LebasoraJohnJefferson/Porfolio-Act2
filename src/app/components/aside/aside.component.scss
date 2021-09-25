@@ -1,8 +1,8 @@
-$color:rgb(170, 168, 38);
+$color:white;
 $color-shadow:rgb(19, 123, 141);
 
 .aside-container{
-    z-index: 2;
+    z-index: 3;
     position:fixed;
     right:5rem; top:20vh;
     height:40vh;
@@ -27,5 +27,38 @@ $color-shadow:rgb(19, 123, 141);
             }
         }
         
+    }
+}
+
+@media only screen and (max-width:768px){
+    .aside-container{
+        top:20px;
+        width:2rem;
+        height: 2rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        ol{
+            width:1.7rem;
+            height: 3px;
+            border:3px solid white;
+            li{
+                display:none;
+            }
+        }
+        ol::before,
+        ol::after{
+            content:'';
+            position: absolute;
+            width:1.33rem;
+            border:3px solid white;
+        }
+        ol::before{
+            transform: translateY(-12px) translateX(-3px);
+        }
+        ol::after{
+            
+            transform: translateY(6px) translateX(-3px);
+        }
     }
 }
