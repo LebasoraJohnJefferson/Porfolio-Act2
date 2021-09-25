@@ -18,6 +18,6 @@ export class BodyComponent implements OnInit {
     setInterval(()=>{
       this.count%2==1 ? this.interest=this.interestArray[1] : this.interest=this.interestArray[0]
       this.count++
-    },3000)
+    },1500)
   }
 }
