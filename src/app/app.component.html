@@ -1,4 +1,9 @@
-<app-header></app-header>
-<app-aside></app-aside>
-<app-body></app-body>
-<app-footer></app-footer>
+<div class='loading-container'>
+    <img class='loading' *ngIf='isLoading' src='https://mir-s3-cdn-cf.behance.net/project_modules/disp/cd514331234507.564a1d2324e4e.gif'/>
+</div>
+<div *ngIf='!isLoading'>
+    <app-header></app-header>
+    <app-aside></app-aside>
+    <app-body></app-body>
+    <app-footer></app-footer>
+</div>
