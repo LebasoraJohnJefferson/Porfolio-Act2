@@ -4,7 +4,7 @@ $color-shadow:rgb(19, 123, 141);
     position: fixed;
     z-index: 4;
     top:30px; right: 4rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .aside-container{
     z-index: 3;
@@ -52,7 +52,7 @@ $color-shadow:rgb(19, 123, 141);
                     display:flex;
                     justify-content: center;
                     align-items: center;
-                    font-size: 2rem;
+                    font-size: 1.3rem;
                     text-decoration: none;
                     i{
                         margin:10px;

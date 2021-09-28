@@ -11,7 +11,7 @@ $color:rgb(19, 123, 141);
     width: 95%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
-    overflow-x: hidden;
+    overflow: hidden;
     .identity{
         box-shadow: 0px 0px 10px $shadow,
                     0px 0px 10px $shadow;
