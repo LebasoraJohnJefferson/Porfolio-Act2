@@ -7,7 +7,7 @@ import { Component,Input } from '@angular/core';
 })
 export class AppComponent {
   title = 'porfolio-using-angular'
-  @Input() isLoading:boolean=false
+  @Input() isLoading:boolean=true
   constructor() {
     setTimeout(()=>{
       this.isLoading=false;
