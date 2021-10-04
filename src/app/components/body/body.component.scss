@@ -75,7 +75,10 @@ $color:rgb(19, 123, 141);
                 justify-content: space-around;
                 border-radius: 10px;
                 overflow: hidden;
+                text-shadow: 0px 0px 3px $shadow,
+                            0px 0px 1px $shadow;
                 .title{
+                    background:none;
                     z-index: 3;
                     font-weight: bold;
                 }
@@ -85,8 +88,8 @@ $color:rgb(19, 123, 141);
                     z-index: 3;
                     a{
                         background:black ;
-                        border-radius: 5px;
-                        padding:5px 10px;
+                        border-radius: 10px;
+                        padding:10px 60px;
                         color:white;
                         font-weight: bold;
                         text-decoration: none;
@@ -97,9 +100,23 @@ $color:rgb(19, 123, 141);
                     }
                 }
                 .consistOf{
+                    background:none;
+                    width:100%;
                     z-index: 3;
                     display:none;
+                    text-shadow: 0px 0px 3px $shadow,
+                                 0px 0px 1px $shadow,
+                                 0px 1px 2px $shadow,
+                                 0px 0px 2px $shadow;
+                    p{
+                        background:none ;
+                    }
                 }
+            }
+            .project:hover{
+                transform: scale(1.05);
+                background:rgba(0,0,0) ;
+                z-index: 2;
             }
             .project:hover .consistOf{
                 color:white;
@@ -114,20 +131,30 @@ $color:rgb(19, 123, 141);
             .project::before{
                 content: '';
                 width:25rem; height: 25rem;
-                z-index: 1;
                 border-radius: 10px;
                 position: absolute;
-                background-image:linear-gradient(to right, rgba(221, 22, 161, 0.3),rgba(52, 17, 206, 0.3));
+                background-image:linear-gradient(to right, rgba(38, 189, 24, 0.3),rgba(52, 17, 206, 0.3));
                 animation:rotate 1s infinite;
             }
-            .project::after{
+            .project:first-child:after,
+            .project:last-child:after,
+            .project:nth-child(2):after{
                 content: '';
                 border-radius: 10px;
                 width:16.2rem; height: 16.2rem;
-                z-index:2;
                 position: absolute;
                 transform: scale(.9);
-                background-color: rgb(22, 29, 53)
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            .project:first-child:after{
+                background-image:url('https://www.yellosa.co.za/img/za/e/1515746053-15-spark-tech.png');
+            }
+            .project:last-child:after{
+                background-image: url('https://www.logic-designs.com/wp-content/uploads/2015/10/mobile-212x300.png');
+            }
+            .project:nth-child(2):after{
+                background-image: url('https://www.elitedigital.co.in/wp-content/uploads/2017/08/page_mobile_app.png');
             }
         }
     }
