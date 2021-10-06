@@ -138,7 +138,8 @@ $color:rgb(19, 123, 141);
             }
             .project:first-child:after,
             .project:last-child:after,
-            .project:nth-child(2):after{
+            .project:nth-child(2):after,
+            .project:nth-child(3):after{
                 content: '';
                 border-radius: 10px;
                 width:16.2rem; height: 16.2rem;
@@ -156,6 +157,10 @@ $color:rgb(19, 123, 141);
             .project:nth-child(2):after{
                 background-image: url('https://www.elitedigital.co.in/wp-content/uploads/2017/08/page_mobile_app.png');
             }
+            .project:nth-child(3):after{
+                background-image: url('https://www.pngkey.com/png/full/248-2480244_web-designing-web-design-slider-hd.png');
+            }
+
         }
     }
 }
